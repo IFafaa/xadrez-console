@@ -31,7 +31,7 @@ namespace xadrez_console.xadrez {
         private void colocarPecas() {
             tab.colocarPeca(new Torre(Cor.BRANCO, tab), new PosicaoXadrez('c', 1).toPosicao());
             tab.colocarPeca(new Torre(Cor.BRANCO, tab), new PosicaoXadrez('c', 2).toPosicao());
-            tab.colocarPeca(new Torre(Cor.BRANCO, tab), new PosicaoXadrez('c', 4).toPosicao());
+            tab.colocarPeca(new Rei(Cor.BRANCO, tab), new PosicaoXadrez('c', 4).toPosicao());
 
 
         }
