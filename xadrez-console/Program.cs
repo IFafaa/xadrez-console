@@ -1,12 +1,13 @@
 ﻿using System;
 using tabuleiro;
+using xadrez_console.tabuleiro;
 
 namespace xadrez_console
 {
     internal class Program {
         static void Main(string[] args) {
-            Posicao posicao = new Posicao(1,2);
-            Console.WriteLine(posicao);
+            Tabuleiro tab = new Tabuleiro(8, 8);
+            Tela.imprimirTabuleiro(tab);
         }
     }
 }
