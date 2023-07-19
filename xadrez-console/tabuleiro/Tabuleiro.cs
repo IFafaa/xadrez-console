@@ -21,6 +21,16 @@ namespace xadrez_console.tabuleiro {
             return _pecas[pos.linha, pos.coluna];
         }
 
+        public Peca retirarPeca(Posicao pos) {
+            Peca peca = this.peca(pos);
+            if(peca == null) {
+                return null;
+            }
+            peca.posicao = null;
+            _pecas[pos.linha, pos.coluna] = null;
+            return peca;
+        }
+
         public void colocarPeca(Peca peca, Posicao pos) {
             if (existePeca(pos)) {
                 throw new TabuleiroException("Já existe uma peça nessa posição!");

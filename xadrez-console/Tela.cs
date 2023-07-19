@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using tabuleiro;
 using xadrez_console.tabuleiro;
+using xadrez_console.xadrez;
 
 namespace xadrez_console {
     internal class Tela {
@@ -13,11 +14,13 @@ namespace xadrez_console {
                 Console.Write(8 - i + " ");
                 for(int j = 0; j < tab.colunas; j++) {
                     Posicao pos = new Posicao(i, j);
-                    if(tab.peca(pos) == null) 
+                    if(tab.peca(pos) == null) {
                         Console.Write("- ");
-                    else 
+                    }
+                    else {
                         imprimirPeca(tab.peca(pos));
                         Console.Write(" ");
+                    }
                 }
                 Console.WriteLine();
             }
@@ -34,6 +37,13 @@ namespace xadrez_console {
                 Console.Write(peca);
                 Console.ForegroundColor = aux;
             }
+        }
+
+        public static PosicaoXadrez lerPosicaoXadrez() {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(coluna, linha);
         }
     }
 }
