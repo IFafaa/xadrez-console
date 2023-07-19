@@ -22,8 +22,25 @@ namespace xadrez_console.tabuleiro {
         }
 
         public void colocarPeca(Peca peca, Posicao pos) {
+            if (existePeca(pos)) {
+                throw new TabuleiroException("Já existe uma peça nessa posição!");
+            }
             _pecas[pos.linha, pos.coluna] = peca;
             peca.posicao = pos;
+        }
+
+        public bool existePeca(Posicao pos) {
+            validarPosicao(pos);
+            return peca(pos) != null;
+        }
+        public bool posicaoValida(Posicao pos) {
+            return !(pos.linha < 0 || pos.linha > linhas - 1 || pos.coluna < 0 || pos.coluna > colunas - 1);
+        }
+
+        public void validarPosicao(Posicao pos) {
+            if (!posicaoValida(pos)) {
+                throw new TabuleiroException("Posição inválida!");
+            }
         }
     }
 }
