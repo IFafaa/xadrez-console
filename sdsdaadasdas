@@ -1,0 +1,59 @@
+[33mcommit ddcd39488947403142d09b69a201413ed1e04726[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 20:44:16 2023 -0300
+
+    feat: testes inicias com movimentos das pecas
+
+[33mcommit 490f20d12019a448107863a6e75ef0d96ffd8e36[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 20:06:22 2023 -0300
+
+    feat: fazendo primeiros testes de movimentaca
+
+[33mcommit 11b59ac95c2027d8a8ce0377e28c22889471304f[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 19:31:26 2023 -0300
+
+    feat: melhorando a impressao do tabuleiro
+
+[33mcommit 5e87855b40db3638504633139746b114aad5b198[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 19:20:54 2023 -0300
+
+    feat: criando posicao xadrez
+
+[33mcommit ff14f6a90c692d84ff23230e92a304298106ae31[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 19:14:00 2023 -0300
+
+    feat: tratando erros com excecoes personalizadas
+
+[33mcommit c2b6f69470f0e45caaa497ac9104881698398442[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 18:59:34 2023 -0300
+
+    feat: comecando a colocar pecas no tabuleiro
+
+[33mcommit 69081e5f30d0ab2e34de133922adb4e2173c4ca0[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 18:43:53 2023 -0300
+
+    feat: inicio da impressao do tabuleiro
+
+[33mcommit eb10f40cd3a5aa6abcf3e88163fdea2762a32328[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 18:28:14 2023 -0300
+
+    feat: inicio da implementacao do tabuleiro
+
+[33mcommit c35b26135f6d3daaa74aaf5b7086dbd4756d2329[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 18:18:47 2023 -0300
+
+    feat: criando classe posicao
+
+[33mcommit bcff2826395c818a830f9de0acc177b38e531d29[m
+Author: Fabricio Lima <fabriciotrab2005@gmail.com>
+Date:   Wed Jul 19 18:12:26 2023 -0300
+
+    first commit: criacao do projeto
