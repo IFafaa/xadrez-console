@@ -68,5 +68,44 @@ namespace xadrez_console {
             int linha = int.Parse(s[1] + "");
             return new PosicaoXadrez(coluna, linha);
         }
+
+        public static void imprimirPecasCapturadas(PartidaDeXadrez partida) {
+            Console.WriteLine("Peças capturadas: ");
+            Console.Write("Brancas: ");
+            imprimirConjunto(partida.pecasCapturadas(Cor.BRANCO));
+            Console.Write("Pretas: ");
+            ConsoleColor aux = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            imprimirConjunto(partida.pecasCapturadas(Cor.PRETO));
+            Console.ForegroundColor = aux;
+            Console.WriteLine();
+
+        }
+
+        public static void imprimirConjunto(HashSet<Peca> listaDePecas) {
+            Console.Write("[");
+            foreach (Peca peca in listaDePecas) {
+                Console.Write(peca.ToString());
+            }
+            Console.Write("]");
+            Console.WriteLine();
+        }
+
+        public static void imprimirPartida(PartidaDeXadrez partida) {
+            imprimirTabuleiro(partida.tab);
+            Console.WriteLine();
+            imprimirPecasCapturadas(partida);
+            Console.WriteLine("Turno: " + partida.turno);
+            if (!partida.terminada) {
+                Console.WriteLine("Aguardando jogador: " + partida.jogadorAtual);
+                if (partida.xeque) {
+                    Console.WriteLine("XEQUE!");
+                }
+            }
+            else {
+                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("Vencedor: " + partida.jogadorAtual);
+            }
+        }
     }
 }
